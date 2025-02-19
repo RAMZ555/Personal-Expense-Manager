@@ -1,54 +1,68 @@
 # Personal Expense Manager (PEM)
 
-## Overview
-The **Personal Expense Manager** is a desktop-based Java application that allows users to manage their daily expenses efficiently.
-Users can register, log in, categorize expenses, track spending, visualize their spending patterns, and receive budget alerts. 
-The application uses JavaFX for the user interface and MySQL for secure data storage,
-implementing essential security features like password hashing and salting.
+Project Overview
+The Personal Expense Manager (PEM) is a Java-based desktop application designed to help users efficiently manage their personal finances. It includes features like secure user authentication, expense categorization, budget tracking, and real-time data visualization using JavaFX charts. The application is backed by a MySQL database for storing user data and expenses securely.
 
-## Features
-- **User Registration & Login**: Secure user registration with hashed and salted passwords.
-- **Expense Categorization**: Organize expenses into categories such as Food, Transport, Shopping, etc.
-- **Expense Tracking**: Add, update, and delete expenses.
-- **Data Visualization**: Graphical representation of spending trends.
-- **Budget Alerts**: Notifies users when they exceed their budget limits.
-- **Database Integration**: Uses MySQL for data storage.
-- **Security**: Password hashing and salting for secure authentication.
-- **User-friendly UI**: Intuitive and interactive UI built with JavaFX.
+Project Features:
 
-## Technologies Used
-- **Programming Language**: Java
-- **UI Framework**: JavaFX
-- **Database**: MySQL
-- **Libraries**:
-  - `javafx.controls`
-  - `javafx.fxml`
-  - `mysql-connector-java`
-- **Build Tool**: Maven (Optional)
+Secure User Authentication:
 
-Project Structure
+User login and registration system with password hashing using SHA-256 to securely store passwords.
 
-  src/main/java
+Expense Management:
 
-   PEMMain.java
+Users can add, categorize, and track expenses with descriptions, dates, and amounts.
 
-     LoginController.java
+Budget Tracking:
 
-      DashboardController.java
+Allows users to set a budget and compare their total expenses against it to monitor overspending.
 
-       ExpenseController.java
+Real-Time Data Visualization:
 
-         DatabaseConnector.java
+Provides bar charts using JavaFX to visualize expenses by category for easy tracking.
 
-            src/main/resources
+MySQL Integration:
 
-              login.fxml
+Stores user information and expenses securely in a MySQL database.
 
-                 dashboard.fxml
+User Interface:
 
-                     add_expense.fxml
+A simple and intuitive GUI built using JavaFX.
 
-                        pom.xml (If using Maven)
+Project Structure:
+
+Here’s the structure of the project and files for easy understanding:
+
+pgsql
+Copy
+Edit
+Personal-Expense-Manager/
+│
+├── src/
+│   ├── model/
+│   │   ├── User.java
+│   │   ├── Expense.java
+│   ├── dao/
+│   │   ├── UserDAO.java
+│   │   ├── ExpenseDAO.java
+│   ├── utils/
+│   │   ├── DBConnection.java
+│   ├── ui/
+│   │   ├── Main.java
+│   │   ├── ExpenseChart.java
+│   │   ├── LoginController.java
+│   │   ├── DashboardController.java
+│   │   ├── AddExpenseController.java
+│   ├── resources/
+│   │   ├── login.fxml
+│   │   ├── dashboard.fxml
+│   │   ├── addExpense.fxml
+│
+├── db/
+│   ├── create_tables.sql  (SQL script for creating tables)
+│
+├── pom.xml  (Maven dependencies)
+└── README.md  (GitHub README file)
 
 ## Installation & Setup
 
