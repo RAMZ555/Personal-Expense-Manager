@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.RegisterController" padding="20">
+    <Label text="Register New User" styleClass="header"/>
+    <TextField fx:id="usernameField" promptText="Username"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <TextField fx:id="budgetField" promptText="Budget"/>
+    <Button text="Register" onAction="#handleRegister"/>
+</VBox>
