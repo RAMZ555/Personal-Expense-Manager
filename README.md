@@ -1,7 +1,10 @@
 # Personal Expense Manager (PEM)
 
 ## Overview
-The **Personal Expense Manager** is a desktop-based Java application that allows users to manage their daily expenses efficiently. Users can register, log in, categorize expenses, track spending, visualize their spending patterns, and receive budget alerts. The application uses JavaFX for the user interface and MySQL for secure data storage, implementing essential security features like password hashing and salting.
+The **Personal Expense Manager** is a desktop-based Java application that allows users to manage their daily expenses efficiently.
+Users can register, log in, categorize expenses, track spending, visualize their spending patterns, and receive budget alerts. 
+The application uses JavaFX for the user interface and MySQL for secure data storage,
+implementing essential security features like password hashing and salting.
 
 ## Features
 - **User Registration & Login**: Secure user registration with hashed and salted passwords.
