@@ -38,21 +38,26 @@ Personal-Expense-Manager/
 │   ├── model/
 │   │   ├── User.java
 │   │   ├── Expense.java
+
 │   ├── dao/
 │   │   ├── UserDAO.java
 │   │   ├── ExpenseDAO.java
+
 │   ├── utils/
 │   │   ├── DBConnection.java
+
 │   ├── ui/
 │   │   ├── Main.java
 │   │   ├── ExpenseChart.java
 │   │   ├── LoginController.java
 │   │   ├── DashboardController.java
 │   │   ├── AddExpenseController.java
+
 │   ├── resources/
 │   │   ├── login.fxml
 │   │   ├── dashboard.fxml
 │   │   ├── addExpense.fxml
+
 │
 ├── db/
 │   ├── create_tables.sql  (SQL script for creating tables)
