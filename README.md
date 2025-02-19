@@ -32,7 +32,7 @@ A simple and intuitive GUI built using JavaFX.
 # Project Structure:
 
 
-# Personal-Expense-Manager/
+Personal-Expense-Manager/
 │
 ├── src/
 │   ├── model/
@@ -59,6 +59,7 @@ A simple and intuitive GUI built using JavaFX.
 │
 ├── pom.xml  (Maven dependencies)
 └── README.md  (GitHub README file)
+
 
 ## Installation & Setup
 
