@@ -28,27 +28,27 @@ implementing essential security features like password hashing and salting.
 
 Project Structure
 
-src/main/java
+  src/main/java
 
-PEMMain.java
+   PEMMain.java
 
-LoginController.java
+     LoginController.java
 
-DashboardController.java
+      DashboardController.java
 
-ExpenseController.java
+       ExpenseController.java
 
-DatabaseConnector.java
+         DatabaseConnector.java
 
-src/main/resources
+            src/main/resources
 
-login.fxml
+              login.fxml
 
-dashboard.fxml
+                 dashboard.fxml
 
-add_expense.fxml
+                     add_expense.fxml
 
-pom.xml (If using Maven)
+                        pom.xml (If using Maven)
 
 ## Installation & Setup
 
