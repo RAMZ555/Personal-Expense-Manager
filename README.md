@@ -37,39 +37,40 @@ A simple and intuitive GUI built using JavaFX.
 
 # Project Structure:
 
-
-Personal-Expense-Manager/
+PersonalExpenseManager/
 │
 ├── src/
-│   ├── model/
-│   │   ├── User.java
-│   │   ├── Expense.java
 
 │   ├── dao/
-│   │   ├── UserDAO.java
-│   │   ├── ExpenseDAO.java
 
-│   ├── utils/
-│   │   ├── DBConnection.java
+│   │   ├── BudgetDAO.java
+│   │   ├── ExpenseDAO.java
+│   │   └── UserDAO.java
+
+│   ├── model/
+
+│   │   ├── Budget.java
+│   │   ├── Expense.java
+│   │   └── User.java
 
 │   ├── ui/
-│   │   ├── Main.java
-│   │   ├── ExpenseChart.java
-│   │   ├── LoginController.java
+
+│   │   ├── MainApp.java
 │   │   ├── DashboardController.java
 │   │   ├── AddExpenseController.java
+│   │   ├── LoginController.java
+│   │   ├── RegisterController.java
 
-│   ├── resources/
-│   │   ├── login.fxml
-│   │   ├── dashboard.fxml
-│   │   ├── addExpense.fxml
+│   │   └── fxml/
 
-│
-├── db/
-│   ├── create_tables.sql  (SQL script for creating tables)
-│
-├── pom.xml  (Maven dependencies)
-└── README.md  (GitHub README file)
+│   │       ├── login.fxml
+│   │       ├── dashboard.fxml
+│   │       ├── add_expense.fxml
+│   │       └── register.fxml
+
+└── resources/
+    └── application.properties
+
 
 ## How to Run
 1. Clone this repository.
