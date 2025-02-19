@@ -4,9 +4,9 @@ import dao.UserDAO;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+import model.User;
+import util.PasswordUtil;
 
 public class LoginController {
 
@@ -23,22 +23,18 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
-        if (userDAO.authenticateUser(username, password)) {
-            // Navigate to Dashboard
+        User user = userDAO.getUserByUsername(username);
+        if (user != null && PasswordUtil.verifyPassword(password, user.getPasswordHash())) {
+            // Successful login, open dashboard
             Stage stage = (Stage) usernameField.getScene().getWindow();
-            stage.close();
-            DashboardController.showDashboard();
+            // Load the dashboard scene (not shown here, but follow same process as login)
         } else {
-            Alert alert = new Alert(AlertType.ERROR);
-            alert.setTitle("Login Failed");
-            alert.setHeaderText(null);
-            alert.setContentText("Invalid username or password.");
-            alert.showAndWait();
+            // Handle incorrect login
         }
     }
 
     @FXML
-    public void handleRegister() {
-        // Navigate to Registration screen
+    public void openRegister() {
+        // Load register screen
     }
 }
