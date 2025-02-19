@@ -32,10 +32,7 @@ A simple and intuitive GUI built using JavaFX.
 # Project Structure:
 
 
-pgsql
-Copy
-Edit
-Personal-Expense-Manager/
+# Personal-Expense-Manager/
 │
 ├── src/
 │   ├── model/
