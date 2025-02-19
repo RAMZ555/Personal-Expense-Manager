@@ -27,7 +27,7 @@ implementing essential security features like password hashing and salting.
 - **Build Tool**: Maven (Optional)
 
   Project Structure
-  
+
 src/main/java
 PEMMain.java
 LoginController.java
