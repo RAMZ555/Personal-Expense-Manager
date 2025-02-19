@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ui.DashboardController" spacing="10" alignment="CENTER" padding="10">
+
+    <!-- PieChart for Expense Distribution -->
+    <PieChart fx:id="expensePieChart" title="Expense Distribution" prefHeight="300" prefWidth="500"/>
+
+    <!-- BarChart for Detailed Expense Comparison -->
+    <BarChart fx:id="expenseBarChart" prefHeight="300" prefWidth="500">
+        <xAxis>
+            <CategoryAxis label="Category"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Amount"/>
+        </yAxis>
+    </BarChart>
+
+</VBox>
