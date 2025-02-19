@@ -29,6 +29,12 @@ User Interface:
 
 A simple and intuitive GUI built using JavaFX.
 
+## Technologies Used
+- **Java**: Backend logic and UI (JavaFX)
+- **MySQL**: Database for storing users, expenses, and budgets
+- **JavaFX**: For user interface and charts
+- **BCrypt**: For password hashing
+
 # Project Structure:
 
 
@@ -64,6 +70,13 @@ Personal-Expense-Manager/
 │
 ├── pom.xml  (Maven dependencies)
 └── README.md  (GitHub README file)
+
+## How to Run
+1. Clone this repository.
+2. Set up a MySQL database and run the provided SQL script to create necessary tables.
+3. Configure the database connection in `UserDAO.java`, `ExpenseDAO.java`, and `BudgetDAO.java`.
+4. Run `Main.java` to start the application.
+
 
 
 ## Installation & Setup
