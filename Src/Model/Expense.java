@@ -10,6 +10,25 @@ public class Expense {
     private Date date;
     private String description;
 
+    // Constructor for existing expenses
+    public Expense(int id, int userId, String category, double amount, Date date, String description) {
+        this.id = id;
+        this.userId = userId;
+        this.category = category;
+        this.amount = amount;
+        this.date = date;
+        this.description = description;
+    }
+
+    // Constructor for new expenses
+    public Expense(int userId, String category, double amount, Date date, String description) {
+        this.userId = userId;
+        this.category = category;
+        this.amount = amount;
+        this.date = date;
+        this.description = description;
+    }
+
     // Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
