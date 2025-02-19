@@ -26,26 +26,28 @@ implementing essential security features like password hashing and salting.
   - `mysql-connector-java`
 - **Build Tool**: Maven (Optional)
 
-  Project Structure
+Project Structure
 
 src/main/java
 
-
 PEMMain.java
-
 
 LoginController.java
 
-
 DashboardController.java
 
-
 ExpenseController.java
+
 DatabaseConnector.java
+
 src/main/resources
+
 login.fxml
+
 dashboard.fxml
+
 add_expense.fxml
+
 pom.xml (If using Maven)
 
 ## Installation & Setup
